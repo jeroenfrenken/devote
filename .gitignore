@@ -1,6 +1,7 @@
 .DS_Store
 .idea
 
+.quorumDevQuickstart.lock
 logs
 node_modules
 smart_contracts/node_modules
