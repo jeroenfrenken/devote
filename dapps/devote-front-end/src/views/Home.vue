@@ -93,7 +93,11 @@ export default class Home extends Vue {
   private async fetchAccount(): Promise<string | undefined> {
     try {
       const accounts = await this.web3.eth.getAccounts();
-      return accounts[ 0 ];
+      if ( accounts.length > 0 ) {
+        return accounts[ 0 ];
+      }
+
+      return undefined;
     } catch (e) {
       window.alert('Afgebroken door de gebruiker');
       return undefined;
@@ -155,7 +159,7 @@ export default class Home extends Vue {
     const candidateLength = await this.instance.getCandidateLength();
     const length = candidateLength.toNumber();
 
-    // For loop which fetches all the candidates by index
+    // // For loop which fetches all the candidates by index
     for (let i = 0; i < length; i++) {
       const c = await this.instance.candidates(i);
 
@@ -172,7 +176,6 @@ export default class Home extends Vue {
 
   public async fetchTotalVotes(): Promise<number> {
     const vote = await this.instance.totalVotes();
-    console.log(vote);
     return vote.toNumber();
   }
 
