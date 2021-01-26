@@ -121,7 +121,7 @@ export default class Home extends Vue {
       from: account
     });
 
-    this.input = '';
+    this.candidateInput = '';
   }
 
   /**
@@ -172,6 +172,7 @@ export default class Home extends Vue {
 
   public async fetchTotalVotes(): Promise<number> {
     const vote = await this.instance.totalVotes();
+    console.log(vote);
     return vote.toNumber();
   }
 
