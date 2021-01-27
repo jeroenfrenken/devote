@@ -108,8 +108,7 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function",
-      "constant": true
+      "type": "function"
     },
     {
       "inputs": [],
@@ -122,8 +121,7 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function",
-      "constant": true
+      "type": "function"
     },
     {
       "inputs": [
@@ -142,8 +140,7 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function",
-      "constant": true
+      "type": "function"
     },
     {
       "inputs": [
@@ -167,8 +164,7 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function",
-      "constant": true
+      "type": "function"
     },
     {
       "inputs": [
@@ -187,8 +183,7 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function",
-      "constant": true
+      "type": "function"
     },
     {
       "inputs": [
@@ -230,8 +225,7 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function",
-      "constant": true
+      "type": "function"
     },
     {
       "inputs": [],
@@ -244,8 +238,7 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function",
-      "constant": true
+      "type": "function"
     },
     {
       "inputs": [
@@ -328,42 +321,42 @@
     "absolutePath": "/Users/bvvliet/school/devote/smart_contracts/contracts/ElectionNFTManager.sol",
     "exportedSymbols": {
       "AccessControl": [
-        706
+        708
       ],
       "Address": [
-        1727
+        1729
       ],
       "Context": [
-        423
+        425
       ],
       "ERC20": [
-        1405
+        1407
       ],
       "ElectionNFT": [
-        311
+        313
       ],
       "ElectionNFTManager": [
-        400
+        402
       ],
       "EnumerableSet": [
-        2207
+        2209
       ],
       "IERC20": [
-        1483
+        1485
       ],
       "Pausable": [
-        2297
+        2299
       ],
       "SafeMath": [
-        902
+        904
       ]
     },
-    "id": 401,
+    "id": 403,
     "license": "MIT",
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 313,
+        "id": 315,
         "literals": [
           "solidity",
           ">=",
@@ -379,10 +372,10 @@
       {
         "absolutePath": "@openzeppelin/contracts/access/AccessControl.sol",
         "file": "@openzeppelin/contracts/access/AccessControl.sol",
-        "id": 314,
+        "id": 316,
         "nodeType": "ImportDirective",
-        "scope": 401,
-        "sourceUnit": 707,
+        "scope": 403,
+        "sourceUnit": 709,
         "src": "66:58:2",
         "symbolAliases": [],
         "unitAlias": ""
@@ -390,10 +383,10 @@
       {
         "absolutePath": "/Users/bvvliet/school/devote/smart_contracts/contracts/ElectionNFT.sol",
         "file": "./ElectionNFT.sol",
-        "id": 315,
+        "id": 317,
         "nodeType": "ImportDirective",
-        "scope": 401,
-        "sourceUnit": 312,
+        "scope": 403,
+        "sourceUnit": 314,
         "src": "125:27:2",
         "symbolAliases": [],
         "unitAlias": ""
@@ -403,33 +396,33 @@
         "baseContracts": [
           {
             "baseName": {
-              "id": 316,
+              "id": 318,
               "name": "AccessControl",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 706,
+              "referencedDeclaration": 708,
               "src": "185:13:2",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_AccessControl_$706",
+                "typeIdentifier": "t_contract$_AccessControl_$708",
                 "typeString": "contract AccessControl"
               }
             },
-            "id": 317,
+            "id": 319,
             "nodeType": "InheritanceSpecifier",
             "src": "185:13:2"
           }
         ],
         "contractDependencies": [
-          311,
-          423,
-          706
+          313,
+          425,
+          708
         ],
         "contractKind": "contract",
         "fullyImplemented": true,
-        "id": 400,
+        "id": 402,
         "linearizedBaseContracts": [
-          400,
-          706,
-          423
+          402,
+          708,
+          425
         ],
         "name": "ElectionNFTManager",
         "nodeType": "ContractDefinition",
@@ -437,11 +430,11 @@
           {
             "constant": true,
             "functionSelector": "75b238fc",
-            "id": 322,
+            "id": 324,
             "mutability": "constant",
             "name": "ADMIN_ROLE",
             "nodeType": "VariableDeclaration",
-            "scope": 400,
+            "scope": 402,
             "src": "205:60:2",
             "stateVariable": true,
             "storageLocation": "default",
@@ -450,7 +443,7 @@
               "typeString": "bytes32"
             },
             "typeName": {
-              "id": 318,
+              "id": 320,
               "name": "bytes32",
               "nodeType": "ElementaryTypeName",
               "src": "205:7:2",
@@ -463,7 +456,7 @@
               "arguments": [
                 {
                   "hexValue": "41444d494e5f524f4c45",
-                  "id": 320,
+                  "id": 322,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -485,7 +478,7 @@
                     "typeString": "literal_string \"ADMIN_ROLE\""
                   }
                 ],
-                "id": 319,
+                "id": 321,
                 "name": "keccak256",
                 "nodeType": "Identifier",
                 "overloadedDeclarations": [],
@@ -496,7 +489,7 @@
                   "typeString": "function (bytes memory) pure returns (bytes32)"
                 }
               },
-              "id": 321,
+              "id": 323,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
@@ -516,26 +509,26 @@
           {
             "constant": false,
             "functionSelector": "47ccca02",
-            "id": 324,
+            "id": 326,
             "mutability": "mutable",
             "name": "nft",
             "nodeType": "VariableDeclaration",
-            "scope": 400,
+            "scope": 402,
             "src": "271:22:2",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
-              "typeIdentifier": "t_contract$_ElectionNFT_$311",
+              "typeIdentifier": "t_contract$_ElectionNFT_$313",
               "typeString": "contract ElectionNFT"
             },
             "typeName": {
-              "id": 323,
+              "id": 325,
               "name": "ElectionNFT",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 311,
+              "referencedDeclaration": 313,
               "src": "271:11:2",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_ElectionNFT_$311",
+                "typeIdentifier": "t_contract$_ElectionNFT_$313",
                 "typeString": "contract ElectionNFT"
               }
             },
@@ -543,7 +536,7 @@
           },
           {
             "body": {
-              "id": 345,
+              "id": 347,
               "nodeType": "Block",
               "src": "370:100:2",
               "statements": [
@@ -551,11 +544,11 @@
                   "expression": {
                     "arguments": [
                       {
-                        "id": 334,
+                        "id": 336,
                         "name": "ADMIN_ROLE",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 322,
+                        "referencedDeclaration": 324,
                         "src": "391:10:2",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bytes32",
@@ -564,7 +557,7 @@
                       },
                       {
                         "expression": {
-                          "id": 335,
+                          "id": 337,
                           "name": "msg",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
@@ -575,7 +568,7 @@
                             "typeString": "msg"
                           }
                         },
-                        "id": 336,
+                        "id": 338,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -600,18 +593,18 @@
                           "typeString": "address payable"
                         }
                       ],
-                      "id": 333,
+                      "id": 335,
                       "name": "_setupRole",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 632,
+                      "referencedDeclaration": 634,
                       "src": "380:10:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_nonpayable$_t_bytes32_$_t_address_$returns$__$",
                         "typeString": "function (bytes32,address)"
                       }
                     },
-                    "id": 337,
+                    "id": 339,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -626,7 +619,7 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 338,
+                  "id": 340,
                   "nodeType": "ExpressionStatement",
                   "src": "380:34:2"
                 },
@@ -634,11 +627,11 @@
                   "expression": {
                     "arguments": [
                       {
-                        "id": 340,
+                        "id": 342,
                         "name": "name_",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 326,
+                        "referencedDeclaration": 328,
                         "src": "442:5:2",
                         "typeDescriptions": {
                           "typeIdentifier": "t_string_memory_ptr",
@@ -646,11 +639,11 @@
                         }
                       },
                       {
-                        "id": 341,
+                        "id": 343,
                         "name": "symbol_",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 328,
+                        "referencedDeclaration": 330,
                         "src": "449:7:2",
                         "typeDescriptions": {
                           "typeIdentifier": "t_string_memory_ptr",
@@ -658,11 +651,11 @@
                         }
                       },
                       {
-                        "id": 342,
+                        "id": 344,
                         "name": "cap_",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 330,
+                        "referencedDeclaration": 332,
                         "src": "458:4:2",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -685,18 +678,18 @@
                           "typeString": "uint256"
                         }
                       ],
-                      "id": 339,
+                      "id": 341,
                       "name": "createNewElection",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 399,
+                      "referencedDeclaration": 401,
                       "src": "424:17:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_nonpayable$_t_string_memory_ptr_$_t_string_memory_ptr_$_t_uint256_$returns$__$",
                         "typeString": "function (string memory,string memory,uint256)"
                       }
                     },
-                    "id": 343,
+                    "id": 345,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -711,29 +704,29 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 344,
+                  "id": 346,
                   "nodeType": "ExpressionStatement",
                   "src": "424:39:2"
                 }
               ]
             },
-            "id": 346,
+            "id": 348,
             "implemented": true,
             "kind": "constructor",
             "modifiers": [],
             "name": "",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 331,
+              "id": 333,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 326,
+                  "id": 328,
                   "mutability": "mutable",
                   "name": "name_",
                   "nodeType": "VariableDeclaration",
-                  "scope": 346,
+                  "scope": 348,
                   "src": "312:19:2",
                   "stateVariable": false,
                   "storageLocation": "memory",
@@ -742,7 +735,7 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 325,
+                    "id": 327,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
                     "src": "312:6:2",
@@ -755,11 +748,11 @@
                 },
                 {
                   "constant": false,
-                  "id": 328,
+                  "id": 330,
                   "mutability": "mutable",
                   "name": "symbol_",
                   "nodeType": "VariableDeclaration",
-                  "scope": 346,
+                  "scope": 348,
                   "src": "333:21:2",
                   "stateVariable": false,
                   "storageLocation": "memory",
@@ -768,7 +761,7 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 327,
+                    "id": 329,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
                     "src": "333:6:2",
@@ -781,11 +774,11 @@
                 },
                 {
                   "constant": false,
-                  "id": 330,
+                  "id": 332,
                   "mutability": "mutable",
                   "name": "cap_",
                   "nodeType": "VariableDeclaration",
-                  "scope": 346,
+                  "scope": 348,
                   "src": "356:12:2",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -794,7 +787,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 329,
+                    "id": 331,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "356:7:2",
@@ -809,12 +802,12 @@
               "src": "311:58:2"
             },
             "returnParameters": {
-              "id": 332,
+              "id": 334,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "370:0:2"
             },
-            "scope": 400,
+            "scope": 402,
             "src": "300:170:2",
             "stateMutability": "nonpayable",
             "virtual": false,
@@ -822,7 +815,7 @@
           },
           {
             "body": {
-              "id": 359,
+              "id": 361,
               "nodeType": "Block",
               "src": "568:98:2",
               "statements": [
@@ -832,11 +825,11 @@
                       {
                         "arguments": [
                           {
-                            "id": 351,
+                            "id": 353,
                             "name": "ADMIN_ROLE",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 322,
+                            "referencedDeclaration": 324,
                             "src": "594:10:2",
                             "typeDescriptions": {
                               "typeIdentifier": "t_bytes32",
@@ -845,7 +838,7 @@
                           },
                           {
                             "expression": {
-                              "id": 352,
+                              "id": 354,
                               "name": "msg",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
@@ -856,7 +849,7 @@
                                 "typeString": "msg"
                               }
                             },
-                            "id": 353,
+                            "id": 355,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": false,
@@ -881,18 +874,18 @@
                               "typeString": "address payable"
                             }
                           ],
-                          "id": 350,
+                          "id": 352,
                           "name": "hasRole",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 495,
+                          "referencedDeclaration": 497,
                           "src": "586:7:2",
                           "typeDescriptions": {
                             "typeIdentifier": "t_function_internal_view$_t_bytes32_$_t_address_$returns$_t_bool_$",
                             "typeString": "function (bytes32,address) view returns (bool)"
                           }
                         },
-                        "id": 354,
+                        "id": 356,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -909,7 +902,7 @@
                       },
                       {
                         "hexValue": "43616c6c6572206973206e6f7420612041444d494e5f524f4c45",
-                        "id": 355,
+                        "id": 357,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
@@ -935,7 +928,7 @@
                           "typeString": "literal_string \"Caller is not a ADMIN_ROLE\""
                         }
                       ],
-                      "id": 349,
+                      "id": 351,
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
@@ -949,7 +942,7 @@
                         "typeString": "function (bool,string memory) pure"
                       }
                     },
-                    "id": 356,
+                    "id": 358,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -964,28 +957,28 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 357,
+                  "id": 359,
                   "nodeType": "ExpressionStatement",
                   "src": "578:70:2"
                 },
                 {
-                  "id": 358,
+                  "id": 360,
                   "nodeType": "PlaceholderStatement",
                   "src": "658:1:2"
                 }
               ]
             },
             "documentation": {
-              "id": 347,
+              "id": 349,
               "nodeType": "StructuredDocumentation",
               "src": "476:68:2",
               "text": " @dev Checks if the sender has admin role assigned"
             },
-            "id": 360,
+            "id": 362,
             "name": "isAdmin",
             "nodeType": "ModifierDefinition",
             "parameters": {
-              "id": 348,
+              "id": 350,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "565:2:2"
@@ -996,7 +989,7 @@
           },
           {
             "body": {
-              "id": 369,
+              "id": 371,
               "nodeType": "Block",
               "src": "849:28:2",
               "statements": [
@@ -1006,32 +999,32 @@
                     "expression": {
                       "argumentTypes": [],
                       "expression": {
-                        "id": 364,
+                        "id": 366,
                         "name": "nft",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 324,
+                        "referencedDeclaration": 326,
                         "src": "859:3:2",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_ElectionNFT_$311",
+                          "typeIdentifier": "t_contract$_ElectionNFT_$313",
                           "typeString": "contract ElectionNFT"
                         }
                       },
-                      "id": 366,
+                      "id": 368,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
                       "lValueRequested": false,
                       "memberName": "pause",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 264,
+                      "referencedDeclaration": 266,
                       "src": "859:9:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_external_nonpayable$__$returns$__$",
                         "typeString": "function () external"
                       }
                     },
-                    "id": 367,
+                    "id": 369,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1046,38 +1039,38 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 368,
+                  "id": 370,
                   "nodeType": "ExpressionStatement",
                   "src": "859:11:2"
                 }
               ]
             },
             "documentation": {
-              "id": 361,
+              "id": 363,
               "nodeType": "StructuredDocumentation",
               "src": "672:135:2",
               "text": " @dev Since we don't allow unpausing an ElectionNFT we can use the pause function to pause all activity going forward"
             },
             "functionSelector": "c137e704",
-            "id": 370,
+            "id": 372,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "stopActiveElection",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 362,
+              "id": 364,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "839:2:2"
             },
             "returnParameters": {
-              "id": 363,
+              "id": 365,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "849:0:2"
             },
-            "scope": 400,
+            "scope": 402,
             "src": "812:65:2",
             "stateMutability": "nonpayable",
             "virtual": false,
@@ -1085,26 +1078,26 @@
           },
           {
             "body": {
-              "id": 398,
+              "id": 400,
               "nodeType": "Block",
               "src": "1031:96:2",
               "statements": [
                 {
                   "expression": {
-                    "id": 389,
+                    "id": 391,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
-                      "id": 382,
+                      "id": 384,
                       "name": "nft",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 324,
+                      "referencedDeclaration": 326,
                       "src": "1041:3:2",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_ElectionNFT_$311",
+                        "typeIdentifier": "t_contract$_ElectionNFT_$313",
                         "typeString": "contract ElectionNFT"
                       }
                     },
@@ -1113,11 +1106,11 @@
                     "rightHandSide": {
                       "arguments": [
                         {
-                          "id": 385,
+                          "id": 387,
                           "name": "name_",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 373,
+                          "referencedDeclaration": 375,
                           "src": "1063:5:2",
                           "typeDescriptions": {
                             "typeIdentifier": "t_string_memory_ptr",
@@ -1125,11 +1118,11 @@
                           }
                         },
                         {
-                          "id": 386,
+                          "id": 388,
                           "name": "symbol_",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 375,
+                          "referencedDeclaration": 377,
                           "src": "1070:7:2",
                           "typeDescriptions": {
                             "typeIdentifier": "t_string_memory_ptr",
@@ -1137,11 +1130,11 @@
                           }
                         },
                         {
-                          "id": 387,
+                          "id": 389,
                           "name": "cap_",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 377,
+                          "referencedDeclaration": 379,
                           "src": "1079:4:2",
                           "typeDescriptions": {
                             "typeIdentifier": "t_uint256",
@@ -1164,7 +1157,7 @@
                             "typeString": "uint256"
                           }
                         ],
-                        "id": 384,
+                        "id": 386,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -1172,22 +1165,22 @@
                         "nodeType": "NewExpression",
                         "src": "1047:15:2",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_function_creation_nonpayable$_t_string_memory_ptr_$_t_string_memory_ptr_$_t_uint256_$returns$_t_contract$_ElectionNFT_$311_$",
+                          "typeIdentifier": "t_function_creation_nonpayable$_t_string_memory_ptr_$_t_string_memory_ptr_$_t_uint256_$returns$_t_contract$_ElectionNFT_$313_$",
                           "typeString": "function (string memory,string memory,uint256) returns (contract ElectionNFT)"
                         },
                         "typeName": {
-                          "id": 383,
+                          "id": 385,
                           "name": "ElectionNFT",
                           "nodeType": "UserDefinedTypeName",
-                          "referencedDeclaration": 311,
+                          "referencedDeclaration": 313,
                           "src": "1051:11:2",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_contract$_ElectionNFT_$311",
+                            "typeIdentifier": "t_contract$_ElectionNFT_$313",
                             "typeString": "contract ElectionNFT"
                           }
                         }
                       },
-                      "id": 388,
+                      "id": 390,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -1198,17 +1191,17 @@
                       "src": "1047:37:2",
                       "tryCall": false,
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_ElectionNFT_$311",
+                        "typeIdentifier": "t_contract$_ElectionNFT_$313",
                         "typeString": "contract ElectionNFT"
                       }
                     },
                     "src": "1041:43:2",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_ElectionNFT_$311",
+                      "typeIdentifier": "t_contract$_ElectionNFT_$313",
                       "typeString": "contract ElectionNFT"
                     }
                   },
-                  "id": 390,
+                  "id": 392,
                   "nodeType": "ExpressionStatement",
                   "src": "1041:43:2"
                 },
@@ -1217,7 +1210,7 @@
                     "arguments": [
                       {
                         "expression": {
-                          "id": 394,
+                          "id": 396,
                           "name": "msg",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
@@ -1228,7 +1221,7 @@
                             "typeString": "msg"
                           }
                         },
-                        "id": 395,
+                        "id": 397,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -1250,32 +1243,32 @@
                         }
                       ],
                       "expression": {
-                        "id": 391,
+                        "id": 393,
                         "name": "nft",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 324,
+                        "referencedDeclaration": 326,
                         "src": "1094:3:2",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_ElectionNFT_$311",
+                          "typeIdentifier": "t_contract$_ElectionNFT_$313",
                           "typeString": "contract ElectionNFT"
                         }
                       },
-                      "id": 393,
+                      "id": 395,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
                       "lValueRequested": false,
                       "memberName": "addManager",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 231,
+                      "referencedDeclaration": 233,
                       "src": "1094:14:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_external_nonpayable$_t_address_$returns$__$",
                         "typeString": "function (address) external"
                       }
                     },
-                    "id": 396,
+                    "id": 398,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1290,31 +1283,31 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 397,
+                  "id": 399,
                   "nodeType": "ExpressionStatement",
                   "src": "1094:26:2"
                 }
               ]
             },
             "documentation": {
-              "id": 371,
+              "id": 373,
               "nodeType": "StructuredDocumentation",
               "src": "883:43:2",
               "text": " @dev Create new election"
             },
             "functionSelector": "d89881fe",
-            "id": 399,
+            "id": 401,
             "implemented": true,
             "kind": "function",
             "modifiers": [
               {
-                "id": 380,
+                "id": 382,
                 "modifierName": {
-                  "id": 379,
+                  "id": 381,
                   "name": "isAdmin",
                   "nodeType": "Identifier",
                   "overloadedDeclarations": [],
-                  "referencedDeclaration": 360,
+                  "referencedDeclaration": 362,
                   "src": "1016:7:2",
                   "typeDescriptions": {
                     "typeIdentifier": "t_modifier$__$",
@@ -1328,16 +1321,16 @@
             "name": "createNewElection",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 378,
+              "id": 380,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 373,
+                  "id": 375,
                   "mutability": "mutable",
                   "name": "name_",
                   "nodeType": "VariableDeclaration",
-                  "scope": 399,
+                  "scope": 401,
                   "src": "958:19:2",
                   "stateVariable": false,
                   "storageLocation": "memory",
@@ -1346,7 +1339,7 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 372,
+                    "id": 374,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
                     "src": "958:6:2",
@@ -1359,11 +1352,11 @@
                 },
                 {
                   "constant": false,
-                  "id": 375,
+                  "id": 377,
                   "mutability": "mutable",
                   "name": "symbol_",
                   "nodeType": "VariableDeclaration",
-                  "scope": 399,
+                  "scope": 401,
                   "src": "979:21:2",
                   "stateVariable": false,
                   "storageLocation": "memory",
@@ -1372,7 +1365,7 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 374,
+                    "id": 376,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
                     "src": "979:6:2",
@@ -1385,11 +1378,11 @@
                 },
                 {
                   "constant": false,
-                  "id": 377,
+                  "id": 379,
                   "mutability": "mutable",
                   "name": "cap_",
                   "nodeType": "VariableDeclaration",
-                  "scope": 399,
+                  "scope": 401,
                   "src": "1002:12:2",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1398,7 +1391,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 376,
+                    "id": 378,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "1002:7:2",
@@ -1413,19 +1406,19 @@
               "src": "957:58:2"
             },
             "returnParameters": {
-              "id": 381,
+              "id": 383,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "1031:0:2"
             },
-            "scope": 400,
+            "scope": 402,
             "src": "931:196:2",
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "public"
           }
         ],
-        "scope": 401,
+        "scope": 403,
         "src": "154:975:2"
       }
     ],
@@ -1436,34 +1429,34 @@
       "absolutePath": "/Users/bvvliet/school/devote/smart_contracts/contracts/ElectionNFTManager.sol",
       "exportedSymbols": {
         "AccessControl": [
-          706
+          708
         ],
         "Address": [
-          1727
+          1729
         ],
         "Context": [
-          423
+          425
         ],
         "ERC20": [
-          1405
+          1407
         ],
         "ElectionNFT": [
-          311
+          313
         ],
         "ElectionNFTManager": [
-          400
+          402
         ],
         "EnumerableSet": [
-          2207
+          2209
         ],
         "IERC20": [
-          1483
+          1485
         ],
         "Pausable": [
-          2297
+          2299
         ],
         "SafeMath": [
-          902
+          904
         ]
       },
       "license": "MIT"
@@ -1481,37 +1474,37 @@
             ".0"
           ]
         },
-        "id": 313,
+        "id": 315,
         "name": "PragmaDirective",
         "src": "32:32:2"
       },
       {
         "attributes": {
-          "SourceUnit": 707,
+          "SourceUnit": 709,
           "absolutePath": "@openzeppelin/contracts/access/AccessControl.sol",
           "file": "@openzeppelin/contracts/access/AccessControl.sol",
-          "scope": 401,
+          "scope": 403,
           "symbolAliases": [
             null
           ],
           "unitAlias": ""
         },
-        "id": 314,
+        "id": 316,
         "name": "ImportDirective",
         "src": "66:58:2"
       },
       {
         "attributes": {
-          "SourceUnit": 312,
+          "SourceUnit": 314,
           "absolutePath": "/Users/bvvliet/school/devote/smart_contracts/contracts/ElectionNFT.sol",
           "file": "./ElectionNFT.sol",
-          "scope": 401,
+          "scope": 403,
           "symbolAliases": [
             null
           ],
           "unitAlias": ""
         },
-        "id": 315,
+        "id": 317,
         "name": "ImportDirective",
         "src": "125:27:2"
       },
@@ -1519,19 +1512,19 @@
         "attributes": {
           "abstract": false,
           "contractDependencies": [
-            311,
-            423,
-            706
+            313,
+            425,
+            708
           ],
           "contractKind": "contract",
           "fullyImplemented": true,
           "linearizedBaseContracts": [
-            400,
-            706,
-            423
+            402,
+            708,
+            425
           ],
           "name": "ElectionNFTManager",
-          "scope": 401
+          "scope": 403
         },
         "children": [
           {
@@ -1540,15 +1533,15 @@
               {
                 "attributes": {
                   "name": "AccessControl",
-                  "referencedDeclaration": 706,
+                  "referencedDeclaration": 708,
                   "type": "contract AccessControl"
                 },
-                "id": 316,
+                "id": 318,
                 "name": "UserDefinedTypeName",
                 "src": "185:13:2"
               }
             ],
-            "id": 317,
+            "id": 319,
             "name": "InheritanceSpecifier",
             "src": "185:13:2"
           },
@@ -1558,7 +1551,7 @@
               "functionSelector": "75b238fc",
               "mutability": "constant",
               "name": "ADMIN_ROLE",
-              "scope": 400,
+              "scope": 402,
               "stateVariable": true,
               "storageLocation": "default",
               "type": "bytes32",
@@ -1570,7 +1563,7 @@
                   "name": "bytes32",
                   "type": "bytes32"
                 },
-                "id": 318,
+                "id": 320,
                 "name": "ElementaryTypeName",
                 "src": "205:7:2"
               },
@@ -1604,7 +1597,7 @@
                       "type": "function (bytes memory) pure returns (bytes32)",
                       "value": "keccak256"
                     },
-                    "id": 319,
+                    "id": 321,
                     "name": "Identifier",
                     "src": "242:9:2"
                   },
@@ -1619,17 +1612,17 @@
                       "type": "literal_string \"ADMIN_ROLE\"",
                       "value": "ADMIN_ROLE"
                     },
-                    "id": 320,
+                    "id": 322,
                     "name": "Literal",
                     "src": "252:12:2"
                   }
                 ],
-                "id": 321,
+                "id": 323,
                 "name": "FunctionCall",
                 "src": "242:23:2"
               }
             ],
-            "id": 322,
+            "id": 324,
             "name": "VariableDeclaration",
             "src": "205:60:2"
           },
@@ -1639,7 +1632,7 @@
               "functionSelector": "47ccca02",
               "mutability": "mutable",
               "name": "nft",
-              "scope": 400,
+              "scope": 402,
               "stateVariable": true,
               "storageLocation": "default",
               "type": "contract ElectionNFT",
@@ -1649,15 +1642,15 @@
               {
                 "attributes": {
                   "name": "ElectionNFT",
-                  "referencedDeclaration": 311,
+                  "referencedDeclaration": 313,
                   "type": "contract ElectionNFT"
                 },
-                "id": 323,
+                "id": 325,
                 "name": "UserDefinedTypeName",
                 "src": "271:11:2"
               }
             ],
-            "id": 324,
+            "id": 326,
             "name": "VariableDeclaration",
             "src": "271:22:2"
           },
@@ -1670,7 +1663,7 @@
                 null
               ],
               "name": "",
-              "scope": 400,
+              "scope": 402,
               "stateMutability": "nonpayable",
               "virtual": false,
               "visibility": "public"
@@ -1683,33 +1676,7 @@
                       "constant": false,
                       "mutability": "mutable",
                       "name": "name_",
-                      "scope": 346,
-                      "stateVariable": false,
-                      "storageLocation": "memory",
-                      "type": "string",
-                      "visibility": "internal"
-                    },
-                    "children": [
-                      {
-                        "attributes": {
-                          "name": "string",
-                          "type": "string"
-                        },
-                        "id": 325,
-                        "name": "ElementaryTypeName",
-                        "src": "312:6:2"
-                      }
-                    ],
-                    "id": 326,
-                    "name": "VariableDeclaration",
-                    "src": "312:19:2"
-                  },
-                  {
-                    "attributes": {
-                      "constant": false,
-                      "mutability": "mutable",
-                      "name": "symbol_",
-                      "scope": 346,
+                      "scope": 348,
                       "stateVariable": false,
                       "storageLocation": "memory",
                       "type": "string",
@@ -1723,10 +1690,36 @@
                         },
                         "id": 327,
                         "name": "ElementaryTypeName",
-                        "src": "333:6:2"
+                        "src": "312:6:2"
                       }
                     ],
                     "id": 328,
+                    "name": "VariableDeclaration",
+                    "src": "312:19:2"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "symbol_",
+                      "scope": 348,
+                      "stateVariable": false,
+                      "storageLocation": "memory",
+                      "type": "string",
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "string",
+                          "type": "string"
+                        },
+                        "id": 329,
+                        "name": "ElementaryTypeName",
+                        "src": "333:6:2"
+                      }
+                    ],
+                    "id": 330,
                     "name": "VariableDeclaration",
                     "src": "333:21:2"
                   },
@@ -1735,7 +1728,7 @@
                       "constant": false,
                       "mutability": "mutable",
                       "name": "cap_",
-                      "scope": 346,
+                      "scope": 348,
                       "stateVariable": false,
                       "storageLocation": "default",
                       "type": "uint256",
@@ -1747,17 +1740,17 @@
                           "name": "uint256",
                           "type": "uint256"
                         },
-                        "id": 329,
+                        "id": 331,
                         "name": "ElementaryTypeName",
                         "src": "356:7:2"
                       }
                     ],
-                    "id": 330,
+                    "id": 332,
                     "name": "VariableDeclaration",
                     "src": "356:12:2"
                   }
                 ],
-                "id": 331,
+                "id": 333,
                 "name": "ParameterList",
                 "src": "311:58:2"
               },
@@ -1768,7 +1761,7 @@
                   ]
                 },
                 "children": [],
-                "id": 332,
+                "id": 334,
                 "name": "ParameterList",
                 "src": "370:0:2"
               },
@@ -1806,11 +1799,11 @@
                               "overloadedDeclarations": [
                                 null
                               ],
-                              "referencedDeclaration": 632,
+                              "referencedDeclaration": 634,
                               "type": "function (bytes32,address)",
                               "value": "_setupRole"
                             },
-                            "id": 333,
+                            "id": 335,
                             "name": "Identifier",
                             "src": "380:10:2"
                           },
@@ -1819,11 +1812,11 @@
                               "overloadedDeclarations": [
                                 null
                               ],
-                              "referencedDeclaration": 322,
+                              "referencedDeclaration": 324,
                               "type": "bytes32",
                               "value": "ADMIN_ROLE"
                             },
-                            "id": 334,
+                            "id": 336,
                             "name": "Identifier",
                             "src": "391:10:2"
                           },
@@ -1846,22 +1839,22 @@
                                   "type": "msg",
                                   "value": "msg"
                                 },
-                                "id": 335,
+                                "id": 337,
                                 "name": "Identifier",
                                 "src": "403:3:2"
                               }
                             ],
-                            "id": 336,
+                            "id": 338,
                             "name": "MemberAccess",
                             "src": "403:10:2"
                           }
                         ],
-                        "id": 337,
+                        "id": 339,
                         "name": "FunctionCall",
                         "src": "380:34:2"
                       }
                     ],
-                    "id": 338,
+                    "id": 340,
                     "name": "ExpressionStatement",
                     "src": "380:34:2"
                   },
@@ -1901,11 +1894,11 @@
                               "overloadedDeclarations": [
                                 null
                               ],
-                              "referencedDeclaration": 399,
+                              "referencedDeclaration": 401,
                               "type": "function (string memory,string memory,uint256)",
                               "value": "createNewElection"
                             },
-                            "id": 339,
+                            "id": 341,
                             "name": "Identifier",
                             "src": "424:17:2"
                           },
@@ -1914,11 +1907,11 @@
                               "overloadedDeclarations": [
                                 null
                               ],
-                              "referencedDeclaration": 326,
+                              "referencedDeclaration": 328,
                               "type": "string memory",
                               "value": "name_"
                             },
-                            "id": 340,
+                            "id": 342,
                             "name": "Identifier",
                             "src": "442:5:2"
                           },
@@ -1927,11 +1920,11 @@
                               "overloadedDeclarations": [
                                 null
                               ],
-                              "referencedDeclaration": 328,
+                              "referencedDeclaration": 330,
                               "type": "string memory",
                               "value": "symbol_"
                             },
-                            "id": 341,
+                            "id": 343,
                             "name": "Identifier",
                             "src": "449:7:2"
                           },
@@ -1940,31 +1933,31 @@
                               "overloadedDeclarations": [
                                 null
                               ],
-                              "referencedDeclaration": 330,
+                              "referencedDeclaration": 332,
                               "type": "uint256",
                               "value": "cap_"
                             },
-                            "id": 342,
+                            "id": 344,
                             "name": "Identifier",
                             "src": "458:4:2"
                           }
                         ],
-                        "id": 343,
+                        "id": 345,
                         "name": "FunctionCall",
                         "src": "424:39:2"
                       }
                     ],
-                    "id": 344,
+                    "id": 346,
                     "name": "ExpressionStatement",
                     "src": "424:39:2"
                   }
                 ],
-                "id": 345,
+                "id": 347,
                 "name": "Block",
                 "src": "370:100:2"
               }
             ],
-            "id": 346,
+            "id": 348,
             "name": "FunctionDefinition",
             "src": "300:170:2"
           },
@@ -1979,7 +1972,7 @@
                 "attributes": {
                   "text": " @dev Checks if the sender has admin role assigned"
                 },
-                "id": 347,
+                "id": 349,
                 "name": "StructuredDocumentation",
                 "src": "476:68:2"
               },
@@ -1990,7 +1983,7 @@
                   ]
                 },
                 "children": [],
-                "id": 348,
+                "id": 350,
                 "name": "ParameterList",
                 "src": "565:2:2"
               },
@@ -2033,7 +2026,7 @@
                               "type": "function (bool,string memory) pure",
                               "value": "require"
                             },
-                            "id": 349,
+                            "id": 351,
                             "name": "Identifier",
                             "src": "578:7:2"
                           },
@@ -2067,11 +2060,11 @@
                                   "overloadedDeclarations": [
                                     null
                                   ],
-                                  "referencedDeclaration": 495,
+                                  "referencedDeclaration": 497,
                                   "type": "function (bytes32,address) view returns (bool)",
                                   "value": "hasRole"
                                 },
-                                "id": 350,
+                                "id": 352,
                                 "name": "Identifier",
                                 "src": "586:7:2"
                               },
@@ -2080,11 +2073,11 @@
                                   "overloadedDeclarations": [
                                     null
                                   ],
-                                  "referencedDeclaration": 322,
+                                  "referencedDeclaration": 324,
                                   "type": "bytes32",
                                   "value": "ADMIN_ROLE"
                                 },
-                                "id": 351,
+                                "id": 353,
                                 "name": "Identifier",
                                 "src": "594:10:2"
                               },
@@ -2107,17 +2100,17 @@
                                       "type": "msg",
                                       "value": "msg"
                                     },
-                                    "id": 352,
+                                    "id": 354,
                                     "name": "Identifier",
                                     "src": "606:3:2"
                                   }
                                 ],
-                                "id": 353,
+                                "id": 355,
                                 "name": "MemberAccess",
                                 "src": "606:10:2"
                               }
                             ],
-                            "id": 354,
+                            "id": 356,
                             "name": "FunctionCall",
                             "src": "586:31:2"
                           },
@@ -2132,32 +2125,32 @@
                               "type": "literal_string \"Caller is not a ADMIN_ROLE\"",
                               "value": "Caller is not a ADMIN_ROLE"
                             },
-                            "id": 355,
+                            "id": 357,
                             "name": "Literal",
                             "src": "619:28:2"
                           }
                         ],
-                        "id": 356,
+                        "id": 358,
                         "name": "FunctionCall",
                         "src": "578:70:2"
                       }
                     ],
-                    "id": 357,
+                    "id": 359,
                     "name": "ExpressionStatement",
                     "src": "578:70:2"
                   },
                   {
-                    "id": 358,
+                    "id": 360,
                     "name": "PlaceholderStatement",
                     "src": "658:1:2"
                   }
                 ],
-                "id": 359,
+                "id": 361,
                 "name": "Block",
                 "src": "568:98:2"
               }
             ],
-            "id": 360,
+            "id": 362,
             "name": "ModifierDefinition",
             "src": "549:117:2"
           },
@@ -2171,7 +2164,7 @@
                 null
               ],
               "name": "stopActiveElection",
-              "scope": 400,
+              "scope": 402,
               "stateMutability": "nonpayable",
               "virtual": false,
               "visibility": "public"
@@ -2181,7 +2174,7 @@
                 "attributes": {
                   "text": " @dev Since we don't allow unpausing an ElectionNFT we can use the pause function to pause all activity going forward"
                 },
-                "id": 361,
+                "id": 363,
                 "name": "StructuredDocumentation",
                 "src": "672:135:2"
               },
@@ -2192,7 +2185,7 @@
                   ]
                 },
                 "children": [],
-                "id": 362,
+                "id": 364,
                 "name": "ParameterList",
                 "src": "839:2:2"
               },
@@ -2203,7 +2196,7 @@
                   ]
                 },
                 "children": [],
-                "id": 363,
+                "id": 365,
                 "name": "ParameterList",
                 "src": "849:0:2"
               },
@@ -2239,7 +2232,7 @@
                               "isPure": false,
                               "lValueRequested": false,
                               "member_name": "pause",
-                              "referencedDeclaration": 264,
+                              "referencedDeclaration": 266,
                               "type": "function () external"
                             },
                             "children": [
@@ -2248,36 +2241,36 @@
                                   "overloadedDeclarations": [
                                     null
                                   ],
-                                  "referencedDeclaration": 324,
+                                  "referencedDeclaration": 326,
                                   "type": "contract ElectionNFT",
                                   "value": "nft"
                                 },
-                                "id": 364,
+                                "id": 366,
                                 "name": "Identifier",
                                 "src": "859:3:2"
                               }
                             ],
-                            "id": 366,
+                            "id": 368,
                             "name": "MemberAccess",
                             "src": "859:9:2"
                           }
                         ],
-                        "id": 367,
+                        "id": 369,
                         "name": "FunctionCall",
                         "src": "859:11:2"
                       }
                     ],
-                    "id": 368,
+                    "id": 370,
                     "name": "ExpressionStatement",
                     "src": "859:11:2"
                   }
                 ],
-                "id": 369,
+                "id": 371,
                 "name": "Block",
                 "src": "849:28:2"
               }
             ],
-            "id": 370,
+            "id": 372,
             "name": "FunctionDefinition",
             "src": "812:65:2"
           },
@@ -2288,7 +2281,7 @@
               "isConstructor": false,
               "kind": "function",
               "name": "createNewElection",
-              "scope": 400,
+              "scope": 402,
               "stateMutability": "nonpayable",
               "virtual": false,
               "visibility": "public"
@@ -2298,7 +2291,7 @@
                 "attributes": {
                   "text": " @dev Create new election"
                 },
-                "id": 371,
+                "id": 373,
                 "name": "StructuredDocumentation",
                 "src": "883:43:2"
               },
@@ -2309,33 +2302,7 @@
                       "constant": false,
                       "mutability": "mutable",
                       "name": "name_",
-                      "scope": 399,
-                      "stateVariable": false,
-                      "storageLocation": "memory",
-                      "type": "string",
-                      "visibility": "internal"
-                    },
-                    "children": [
-                      {
-                        "attributes": {
-                          "name": "string",
-                          "type": "string"
-                        },
-                        "id": 372,
-                        "name": "ElementaryTypeName",
-                        "src": "958:6:2"
-                      }
-                    ],
-                    "id": 373,
-                    "name": "VariableDeclaration",
-                    "src": "958:19:2"
-                  },
-                  {
-                    "attributes": {
-                      "constant": false,
-                      "mutability": "mutable",
-                      "name": "symbol_",
-                      "scope": 399,
+                      "scope": 401,
                       "stateVariable": false,
                       "storageLocation": "memory",
                       "type": "string",
@@ -2349,10 +2316,36 @@
                         },
                         "id": 374,
                         "name": "ElementaryTypeName",
-                        "src": "979:6:2"
+                        "src": "958:6:2"
                       }
                     ],
                     "id": 375,
+                    "name": "VariableDeclaration",
+                    "src": "958:19:2"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "symbol_",
+                      "scope": 401,
+                      "stateVariable": false,
+                      "storageLocation": "memory",
+                      "type": "string",
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "string",
+                          "type": "string"
+                        },
+                        "id": 376,
+                        "name": "ElementaryTypeName",
+                        "src": "979:6:2"
+                      }
+                    ],
+                    "id": 377,
                     "name": "VariableDeclaration",
                     "src": "979:21:2"
                   },
@@ -2361,7 +2354,7 @@
                       "constant": false,
                       "mutability": "mutable",
                       "name": "cap_",
-                      "scope": 399,
+                      "scope": 401,
                       "stateVariable": false,
                       "storageLocation": "default",
                       "type": "uint256",
@@ -2373,17 +2366,17 @@
                           "name": "uint256",
                           "type": "uint256"
                         },
-                        "id": 376,
+                        "id": 378,
                         "name": "ElementaryTypeName",
                         "src": "1002:7:2"
                       }
                     ],
-                    "id": 377,
+                    "id": 379,
                     "name": "VariableDeclaration",
                     "src": "1002:12:2"
                   }
                 ],
-                "id": 378,
+                "id": 380,
                 "name": "ParameterList",
                 "src": "957:58:2"
               },
@@ -2394,7 +2387,7 @@
                   ]
                 },
                 "children": [],
-                "id": 381,
+                "id": 383,
                 "name": "ParameterList",
                 "src": "1031:0:2"
               },
@@ -2406,16 +2399,16 @@
                       "overloadedDeclarations": [
                         null
                       ],
-                      "referencedDeclaration": 360,
+                      "referencedDeclaration": 362,
                       "type": "modifier ()",
                       "value": "isAdmin"
                     },
-                    "id": 379,
+                    "id": 381,
                     "name": "Identifier",
                     "src": "1016:7:2"
                   }
                 ],
-                "id": 380,
+                "id": 382,
                 "name": "ModifierInvocation",
                 "src": "1016:7:2"
               },
@@ -2438,11 +2431,11 @@
                               "overloadedDeclarations": [
                                 null
                               ],
-                              "referencedDeclaration": 324,
+                              "referencedDeclaration": 326,
                               "type": "contract ElectionNFT",
                               "value": "nft"
                             },
-                            "id": 382,
+                            "id": 384,
                             "name": "Identifier",
                             "src": "1041:3:2"
                           },
@@ -2487,15 +2480,15 @@
                                   {
                                     "attributes": {
                                       "name": "ElectionNFT",
-                                      "referencedDeclaration": 311,
+                                      "referencedDeclaration": 313,
                                       "type": "contract ElectionNFT"
                                     },
-                                    "id": 383,
+                                    "id": 385,
                                     "name": "UserDefinedTypeName",
                                     "src": "1051:11:2"
                                   }
                                 ],
-                                "id": 384,
+                                "id": 386,
                                 "name": "NewExpression",
                                 "src": "1047:15:2"
                               },
@@ -2504,11 +2497,11 @@
                                   "overloadedDeclarations": [
                                     null
                                   ],
-                                  "referencedDeclaration": 373,
+                                  "referencedDeclaration": 375,
                                   "type": "string memory",
                                   "value": "name_"
                                 },
-                                "id": 385,
+                                "id": 387,
                                 "name": "Identifier",
                                 "src": "1063:5:2"
                               },
@@ -2517,11 +2510,11 @@
                                   "overloadedDeclarations": [
                                     null
                                   ],
-                                  "referencedDeclaration": 375,
+                                  "referencedDeclaration": 377,
                                   "type": "string memory",
                                   "value": "symbol_"
                                 },
-                                "id": 386,
+                                "id": 388,
                                 "name": "Identifier",
                                 "src": "1070:7:2"
                               },
@@ -2530,26 +2523,26 @@
                                   "overloadedDeclarations": [
                                     null
                                   ],
-                                  "referencedDeclaration": 377,
+                                  "referencedDeclaration": 379,
                                   "type": "uint256",
                                   "value": "cap_"
                                 },
-                                "id": 387,
+                                "id": 389,
                                 "name": "Identifier",
                                 "src": "1079:4:2"
                               }
                             ],
-                            "id": 388,
+                            "id": 390,
                             "name": "FunctionCall",
                             "src": "1047:37:2"
                           }
                         ],
-                        "id": 389,
+                        "id": 391,
                         "name": "Assignment",
                         "src": "1041:43:2"
                       }
                     ],
-                    "id": 390,
+                    "id": 392,
                     "name": "ExpressionStatement",
                     "src": "1041:43:2"
                   },
@@ -2583,7 +2576,7 @@
                               "isPure": false,
                               "lValueRequested": false,
                               "member_name": "addManager",
-                              "referencedDeclaration": 231,
+                              "referencedDeclaration": 233,
                               "type": "function (address) external"
                             },
                             "children": [
@@ -2592,16 +2585,16 @@
                                   "overloadedDeclarations": [
                                     null
                                   ],
-                                  "referencedDeclaration": 324,
+                                  "referencedDeclaration": 326,
                                   "type": "contract ElectionNFT",
                                   "value": "nft"
                                 },
-                                "id": 391,
+                                "id": 393,
                                 "name": "Identifier",
                                 "src": "1094:3:2"
                               }
                             ],
-                            "id": 393,
+                            "id": 395,
                             "name": "MemberAccess",
                             "src": "1094:14:2"
                           },
@@ -2624,42 +2617,42 @@
                                   "type": "msg",
                                   "value": "msg"
                                 },
-                                "id": 394,
+                                "id": 396,
                                 "name": "Identifier",
                                 "src": "1109:3:2"
                               }
                             ],
-                            "id": 395,
+                            "id": 397,
                             "name": "MemberAccess",
                             "src": "1109:10:2"
                           }
                         ],
-                        "id": 396,
+                        "id": 398,
                         "name": "FunctionCall",
                         "src": "1094:26:2"
                       }
                     ],
-                    "id": 397,
+                    "id": 399,
                     "name": "ExpressionStatement",
                     "src": "1094:26:2"
                   }
                 ],
-                "id": 398,
+                "id": 400,
                 "name": "Block",
                 "src": "1031:96:2"
               }
             ],
-            "id": 399,
+            "id": 401,
             "name": "FunctionDefinition",
             "src": "931:196:2"
           }
         ],
-        "id": 400,
+        "id": 402,
         "name": "ContractDefinition",
         "src": "154:975:2"
       }
     ],
-    "id": 401,
+    "id": 403,
     "name": "SourceUnit",
     "src": "32:1097:2"
   },
@@ -2752,8 +2745,7 @@
     }
   },
   "schemaVersion": "3.3.3",
-  "updatedAt": "2021-01-27T20:38:14.205Z",
-  "networkType": "ethereum",
+  "updatedAt": "2021-01-27T20:41:51.535Z",
   "devdoc": {
     "kind": "dev",
     "methods": {
