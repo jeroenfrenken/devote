@@ -66,7 +66,7 @@ export default class Home extends Vue {
     this.web3 = new Web3(provider);
 
     // Fetch our compiled smart contract
-    const response = await fetch('http://localhost:8080/Election.json');
+    const response = await fetch('/contracts/Election.json');
     const decodedJson = await response.json();
 
     const Election = TruffleContract(decodedJson);

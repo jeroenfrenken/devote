@@ -3,11 +3,14 @@
   "version": "1.0.0",
   "description": "Example smart contracts for trying out Besu",
   "scripts": {
-    "compile": "node scripts/compile.js",
-    "deploy": "node scripts/deploy.js"
+    "compile": "truffle compile && yarn copy",
+    "migrate": "truffle migrate --network besu",
+    "console": "truffle console --network besu",
+    "copy": "cp -r build/contracts ../dapps/devote-front-end/public/"
   },
-  "license": "Apache-2.0",
+  "license": "MIT",
   "dependencies": {
+    "@openzeppelin/contracts": "^3.3.0",
     "@truffle/hdwallet-provider": "^1.2.1",
     "solc": "^0.7.0",
     "web3": "^1.2.11",
