@@ -41,16 +41,10 @@ x-besu-def:
       --rpc-http-api=EEA,WEB3,ETH,NET,PRIV,PERM,${BESU_CONS_API:-IBFT} \
       --rpc-ws-api=EEA,WEB3,ETH,NET,PRIV,PERM,${BESU_CONS_API:-IBFT} ;
 
-
 x-orion-def:
   &orion-def
   image: consensys/quorum-orion:${QUORUM_ORION_VERSION:-latest}
   command: ["/config/orion.conf"]
-
-
-
-
-
 
 x-ethsignerProxy-def:
   &ethsignerProxy-def
@@ -70,7 +64,6 @@ x-ethsignerProxy-def:
     - 8545
 
 services:
-
   validator1:
     << : *besu-bootnode-def
     volumes:

@@ -44,7 +44,9 @@ module.exports = {
   networks: {
     besu: {
       provider: privateKeyProvider,
-      network_id: '*'
+      network_id: '*',
+      gasPrice:0,
+      gas: "0x1ffffffffffffe"
     }
   },
 
