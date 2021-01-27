@@ -15,9 +15,12 @@ contract Election {
         uint vote;
     }
 
+    /*
+    * Address which are whitelisted
+    */
+    mapping(address => bool) public whitelist;
     uint public totalVotes;
     Candidate[] public candidates;
-    mapping(address => Voter) public voters;
 
     constructor(string memory _name) public {
         owner = msg.sender;
@@ -30,10 +33,15 @@ contract Election {
         _;
     }
 
-    // check if the current has not voted yet
-    modifier hasNotVoted() {
-        require(!voters[msg.sender].voted);
+    // Modifier to check if the user is whitelisted
+    modifier canVote() {
+        require(whitelist[msg.sender]);
         _;
+    }
+
+    // Add a voter to the whitelist
+    function addVoter(address _address) isOwner public {
+        whitelist[_address] = true;
     }
 
     // Add a new candidate to be elected
@@ -47,18 +55,15 @@ contract Election {
     }
 
     // Vote on a candidate index
-    function vote(uint _voteIndex) hasNotVoted public {
-        voters[msg.sender].voted = true;
-        voters[msg.sender].vote = _voteIndex;
-
+    function vote(uint _voteIndex) canVote public {
+        whitelist[msg.sender] = false;
         candidates[_voteIndex].voteCount += 1;
         totalVotes += 1;
     }
 
     // Voting blank
-    function blankVote() hasNotVoted public {
-        voters[msg.sender].voted = true;
-
+    function blankVote() canVote public {
+        whitelist[msg.sender] = false;
         totalVotes += 1;
     }
 }

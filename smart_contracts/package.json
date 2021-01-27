@@ -2,10 +2,6 @@
   "name": "@consensys-software/smart_contracts",
   "version": "1.0.0",
   "description": "Example smart contracts for trying out Besu",
-  "scripts": {
-    "compile": "node scripts/compile.js",
-    "deploy": "node scripts/deploy.js"
-  },
   "license": "Apache-2.0",
   "dependencies": {
     "@truffle/hdwallet-provider": "^1.2.1",

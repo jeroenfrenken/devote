@@ -95,9 +95,9 @@ export default class Home extends Vue {
       const accounts = await this.web3.eth.getAccounts();
       if ( accounts.length > 0 ) {
         return accounts[ 0 ];
+      } else {
+        return undefined;
       }
-
-      return undefined;
     } catch (e) {
       window.alert('Afgebroken door de gebruiker');
       return undefined;
