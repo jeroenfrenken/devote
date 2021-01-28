@@ -4,7 +4,8 @@
   "description": "Example smart contracts for trying out Besu",
   "scripts": {
     "compile": "truffle compile && yarn copy",
-    "migrate": "truffle migrate --network besu",
+    "migrate": "truffle migrate --network besu --reset && yarn copy",
+    "clean": "rm -r build",
     "console": "truffle console --network besu",
     "copy": "cp -r build/contracts ../dapps/devote-front-end/public/"
   },
