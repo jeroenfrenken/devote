@@ -6,7 +6,7 @@ import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
 import "@openzeppelin/contracts/math/SafeMath.sol";
 import "@openzeppelin/contracts/utils/Pausable.sol";
 
-contract ElectionNFT is ERC20, Pausable, AccessControl {
+contract ElectionFT is ERC20, Pausable, AccessControl {
     using SafeMath for uint256;
 
     /**
@@ -20,10 +20,10 @@ contract ElectionNFT is ERC20, Pausable, AccessControl {
     uint256 private _cap;
 
     /**
-     * @dev Sets up the NFT
+     * @dev Sets up the FT
      */
     constructor(string memory name_, string memory symbol_, uint256 cap_) ERC20(name_, symbol_) {
-        require(cap_ > 0, "ElectionNFT: cap is 0");
+        require(cap_ > 0, "ElectionFT: cap is 0");
 
         // Only one decimal since you cannot do half votes
         _setupDecimals(1);
@@ -31,7 +31,7 @@ contract ElectionNFT is ERC20, Pausable, AccessControl {
         // Add initial manager
         _setupRole(MANAGER_ROLE, msg.sender);
 
-        // Set NFT capacity
+        // Set FT capacity
         _cap = cap_;
     }
 
@@ -44,7 +44,7 @@ contract ElectionNFT is ERC20, Pausable, AccessControl {
     }
 
     /**
-     * @dev Add another manager to the NFT
+     * @dev Add another manager to the FT
      */
     function addManager(address managerAddress) isManager public {
         _setupRole(MANAGER_ROLE, managerAddress);
@@ -77,15 +77,15 @@ contract ElectionNFT is ERC20, Pausable, AccessControl {
      * Requirements:
      *
      * - minted tokens must not cause the total supply to go over the cap.
-     * - the nft is not currently paused
+     * - the ft is not currently paused
      */
     function _beforeTokenTransfer(address from, address to, uint256 amount) internal virtual override {
         super._beforeTokenTransfer(from, to, amount);
 
-        require(!paused(), "ElectionNFT: cannot do token transfer while election is paused");
+        require(!paused(), "ElectionFT: cannot do token transfer while election is paused");
 
         if (from == address(0)) { // When minting tokens
-            require(totalSupply().add(amount) <= _cap, "ERC20Capped: cap exceeded");
+            require(totalSupply().add(amount) <= _cap, "ElectionFT: cap exceeded");
         }
     }
 }

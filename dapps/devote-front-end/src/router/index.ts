@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import VueRouter, { RouteConfig } from 'vue-router'
 import Home from '@/views/Home.vue'
-import NFT from "@/views/NFT.vue";
+import FT from "@/views/FT.vue";
 
 Vue.use(VueRouter)
 
@@ -12,9 +12,9 @@ const routes: Array<RouteConfig> = [
     component: Home
   },
   {
-    path: '/nft',
-    name: 'nft',
-    component: NFT
+    path: '/ft',
+    name: 'ft',
+    component: FT
   },
   {
     path: '/about',

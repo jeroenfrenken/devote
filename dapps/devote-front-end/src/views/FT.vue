@@ -4,7 +4,7 @@
   </div>
   <div v-else>
     <h1>{{ electionName }}</h1>
-    <p>Manager: {{ manager.address }} // NFT: {{ nft.address }}</p>
+    <p>Manager: {{ manager.address }} // FT: {{ ft.address }}</p>
     <p>paused: {{ paused }}</p>
     <p>cap: {{ cap }}</p>
     <p>symbol: {{ symbol }}</p>
@@ -18,7 +18,7 @@ import {Component, Vue} from 'vue-property-decorator';
 import * as Web3 from 'web3';
 
 @Component
-export default class NFT extends Vue {
+export default class FT extends Vue {
   public electionName = '';
   public paused = false;
   public cap = 0;
@@ -27,7 +27,7 @@ export default class NFT extends Vue {
 
   // This hold's the instance of the smart contract created by truffle
   public manager: TruffleContract | undefined = undefined;
-  public nft: TruffleContract | undefined = undefined;
+  public ft: TruffleContract | undefined = undefined;
 
   // Access to the web3 api
   public web3: Web3 | undefined = undefined;
@@ -36,17 +36,17 @@ export default class NFT extends Vue {
     await this.initWeb3AndProvider();
 
     // Fetch our compiled smart contracts
-    const managerContract = await this.loadContract('/contracts/ElectionNFTManager.json');
+    const managerContract = await this.loadContract('/contracts/ElectionFTManager.json');
     this.manager = await managerContract.deployed();
-    const nftAddress = await this.manager.nft();
-    const nftContract = await this.loadContract('/contracts/ElectionNFT.json');
-    this.nft = await nftContract.at(nftAddress);
-    console.log(nftAddress);
-    this.electionName = await this.nft.name();
-    this.paused = await this.nft.paused();
-    this.cap = await this.nft.cap();
-    this.symbol = await this.nft.symbol();
-    this.totalSupply = await this.nft.totalSupply();
+    const ftAddress = await this.manager.ft();
+    const ftContract = await this.loadContract('/contracts/ElectionFT.json');
+    this.ft = await ftContract.at(ftAddress);
+    console.log(ftAddress);
+    this.electionName = await this.ft.name();
+    this.paused = await this.ft.paused();
+    this.cap = await this.ft.cap();
+    this.symbol = await this.ft.symbol();
+    this.totalSupply = await this.ft.totalSupply();
   }
 
   private async loadContract(source: string) {
